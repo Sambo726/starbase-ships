@@ -1,7 +1,7 @@
 # Tourer
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/static/v1?label=Version&message=1.0.1&color=blue)](#changelog)
+[![Version](https://img.shields.io/static/v1?label=Version&message=1.1.0&color=blue)](#changelog)
 [![Blueprint](https://img.shields.io/static/v1?label=Blueprint&message=Free%20Download&color=brightgreen)](#download-blueprint)
 
 The Tourer is a ship that can be used to transport Endos in the style of a tour bus. It has seating for 16 passengers and a fast travel core for mooon trips. The blueprint is provided for [free](#download-blueprint). All [feedback](#providing-feedback) is welcome and in game tips (in-game name Egomaniac) are appreciated. However support will be limited but I will try my best.
@@ -26,22 +26,32 @@ The ship has the following features:
 - One resource bridge
 - Auto generator rate script with adjustable minimum rate
 - Six T2 generators with two T2 fuel chambers and two spare rods on racks
-- Radiators that provide more than adequate cooling
+- Radiators and heat sink that provide more than adequate cooling
 - Three medium tanks with 12,000,000 units of propellant
 - Propellant time and fuel time panels
-- 8 batteries
-- 22 T2 triangle thrusters providing forward thrust
+- 11 batteries
+- 24 T2 triangle thrusters providing forward thrust
 - 10 T2 manuever thrusters providing braking thrust
 - 35 T2 manuever thrusters
 - [ISAN Mono Waypoint System by Archaegeo](https://github.com/Archaegeo/Starbase/tree/45a9bb464cb71d7de7a214f8e665111d6b2b5989/ISAN-Waypoint%20System)
 - Timer panel
 - Odometer panel
 - Service hatches for easy access to fuel
-- Top speed of 105 m/s empty
+- Top speed of 130 m/s empty
 
 ## Changelog
 
-### v1.0.1 (Current) - 24/02/2022
+### v1.1.0 (Current) - XX/XX/2022
+
+- Painted thrusters black and nozzles red
+- Added heat sink
+- Reduced radiators to one base and two extensions
+- Replaced  `RadiationRate` panel with `HeatTransferRate`
+- Added three batteries on left side wing as ballast
+- Changed material of plates on left side wing to Chardonium as ballast
+- Added a pair of triangle forward thrusters for more thrust and better balance, increases top speed from 105m/s to 130m/s
+
+### v1.0.1 - 24/02/2022
 
 - Fixed incorrect values for `Aim` button
 
@@ -86,9 +96,9 @@ The left lever on the center console controls backwards thrust (braking) and the
 | `ISAN2`, `Heading`, `Dest`, `DTW`, `Deltas`, `WP`, `Up`, `Down`, `Save` & `Home` | See [ISAN Waypoint System](https://github.com/Archaegeo/Starbase/tree/45a9bb464cb71d7de7a214f8e665111d6b2b5989/ISAN-Waypoint%20System) for more informaton. |
 | `Timer` | See [Timer](#timer). |
 | `Odometer` | See [Odometer](#odometer). |
-| `Battery` | Shows current battery charge of the eight batteries, maximum of 10,000 units. |
+| `Battery` | Shows current battery charge of the 11 batteries, maximum of 10,000 units. |
 | `Generator` | Current generator rate, maximum of 100%. |
-| `RadiationRate` | Current radiation rate, maximum of 100%. |
+| `HeatTransferRate` | Current heat transfer rate of the heat sinks, maximum of 100%. |
 | `Min Generator Limit` & `Min Gen` | Toggle and sets minimum generator rate. See [Managing Power](#managing-power). |
 | `Fuel Rod 1` & `Fuel Rod 2` | Fuel remaining on fuel rods in individual fuel chambers, maximum of 300,000 units for each. |
 | `Shutdown` | Turns off fuel chambers. |
