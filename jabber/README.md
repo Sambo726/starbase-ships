@@ -1,7 +1,7 @@
 # Jabber
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/static/v1?label=Version&message=1.0.2&color=blue)](#changelog)
+[![Version](https://img.shields.io/static/v1?label=Version&message=1.1.0&color=blue)](#changelog)
 [![Blueprint](https://img.shields.io/static/v1?label=Blueprint&message=Free%20Download&color=brightgreen)](#download-blueprint)
 
 The Jabber is a fast light fighter with four lasers. Although it has very light armour, it is very fast and quite manoeuvrable. The blueprint is provided for [free](#download-blueprint). All [feedback](#providing-feedback) is welcome and in game tips (in-game name Egomaniac) are appreciated. However support will be limited but I will try my best.
@@ -27,7 +27,7 @@ The ship has the following features:
 - One resource bridge
 - Auto generator rate script with adjustable minimum rate
 - Six T2 generators with two T2 fuel chambers and two spare rods on racks
-- Radiators that provide more than adequate cooling
+- Radiators and heat sinks that provide more than adequate cooling for sustained firing
 - Two medium with 8,000,000 units of propellant
 - Propellant time and fuel time panels
 - 20 batteries
@@ -43,7 +43,15 @@ The ship has the following features:
 
 ## Changelog
 
-### v1.0.2 (Current) - 12/02/2022
+### v1.1.0 (Current) - XX/XX/2022
+
+- Painted thrusters' convertors black
+- Replaced `RadiationRate` panel with `HeatTransferRate`
+- Added `StoredHeat` display
+- Added two heat sinks
+- Reduced radiators to two bases
+
+### v1.0.2 - 12/02/2022
 
 - Replaced ammo magazines to get new 600 capacity
 - Updated ammo displays and lights to reflect the new capacity
@@ -97,10 +105,11 @@ The left lever on the center console controls backwards thrust (braking) and the
 | `ISAN2`, `Heading`, `Dest`, `DTW`, `Deltas`, `WP`, `Up`, `Down`, `Save` & `Home` | See [ISAN Waypoint System](https://github.com/Archaegeo/Starbase/tree/45a9bb464cb71d7de7a214f8e665111d6b2b5989/ISAN-Waypoint%20System) for more informaton. |
 | `Timer` | See [Timer](#timer). |
 | `Odometer` | See [Odometer](#odometer). |
-| `Battery` | Shows current battery charge of the 20 batteries, maximum of 10,000 units. |
+| `HeatTransferRate` | Current heat transfer rate of the heat sinks, maximum of 100%. |
+| `StoredHeat` | Current stored heat in the heat sinks, maximum of 15,000 units. |
 | `Shutdown` | Turns off fuel chambers. |
+| `Battery` | Shows current battery charge of the 20 batteries, maximum of 10,000 units. |
 | `Generator` | Current generator rate, maximum of 100%. |
-| `RadiationRate` | Current radiation rate, maximum of 100%. |
 | `Min Generator Limit` & `Min Gen` | Toggle and sets minimum generator rate. See [Managing Power](#managing-power). |
 | `Fuel Rod Left` & `Fuel Rod Right` | Fuel remaining on fuel rods in individual fuel chambers, maximum of 300,000 units for each. |
 | `Propellant` | Total propellant remaining in propellant tanks, maximum of 8,000,000 units. |
@@ -126,6 +135,8 @@ The left lever on the center console controls backwards thrust (braking) and the
 | `Green` lights | Each row of four lights for each laser representing power. Each light represents 1,250 units of power. Blinks when power drops below 1,250. |
 
 When entering combat, activate `Combat` to turn on lasers and start charging the lasers. `Crosshair` activates the beam crosshair for target aimming. Use `Fire` to fire the lasers. It is best used bound to a key and then holding down the key to fire. Lasers fire alternating in pairs of one each of each side.
+
+For longer sustained firing, activate `Min Gen` with a `Min Generator Rate` of 100.
 
 Open the `Service` hatches for access to the ammo magazines.
 
