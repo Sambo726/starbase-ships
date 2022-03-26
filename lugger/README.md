@@ -1,7 +1,7 @@
 # Lugger
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/static/v1?label=Version&message=1.0.5&color=blue)](#changelog)
+[![Version](https://img.shields.io/static/v1?label=Version&message=1.1.0&color=blue)](#changelog)
 [![Blueprint](https://img.shields.io/static/v1?label=Blueprint&message=Free%20Download&color=brightgreen)](#download-blueprint)
 
 The Lugger is a 832 crate hauler with two 10 ring plasma thrusters serving as its main engines to provide decent speed. However it is pretty much at its voxel limit so any additions or changes may be difficult without sacrificing crates.
@@ -50,7 +50,16 @@ The ship has the following features:
 
 ## Changelog
 
-### v1.0.5 (Current) - 21/01/2022
+### v1.1.0 (Current) - XX/XX/2022
+
+- Painted thrusters black and nozzles red
+- Removed useless `BackDoor` button and `Solar` panel from engineering console
+- Added 10 heat sinks
+- Reduced radiators to four bases and eight extensions
+- Replaced all `RadiationRate` panels with `HeatTransferRate`
+- Added `StoredHeat` panels
+
+### v1.0.5 - 21/01/2022
 
 - Fixed propellant progress value max values
 - Removed floating crates left in blueprint by mistake
@@ -177,7 +186,8 @@ If ISAN or NavGrid is not working, it can be reset using the `Reset ISAN` button
 | `Min Gen` & `Min Generator Limit` | Toggle and sets minimum generator rate. See [Managing Power](#managing-power). |
 | `Shutdown` | Will turn off all fuel chambers thus shutting down generators. |
 | `Battery` | Shows current battery charge of the 40 batteries, maximum of 10,000 units. |
-| `RadiationRate` | Current radiation rate of the radiators, maximum of 100%. |
+| `HeatTransferRate` | Current heat transfer rate of the heat sinks, maximum of 100%. |
+| `StoredHeat` | Current stored heat in the heat sinks, maximum of 15,000 units. |
 | `Flow In` & `Flow Out` | Toggle flow modes of resource bridges. See [Refueling Propellant](#refuelling-propellant). |
 | `Lights` | Turns on and off internal lights. |
 | `Doors` | Opens or closes ship entry doors. |
