@@ -1,7 +1,7 @@
 # Rocker Duo
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/static/v1?label=Version&message=1.0.2&color=blue)](#changelog)
+[![Version](https://img.shields.io/static/v1?label=Version&message=1.1.0&color=blue)](#changelog)
 [![Blueprint](https://img.shields.io/static/v1?label=Blueprint&message=Free%20Download&color=brightgreen)](#download-blueprint)
 
 The Rocker Duo is a asteroid hauling ship that is bascially two [Rockers](../rocker) mashed together. It is designed to be used in the safe zone and haul small asteroids.
@@ -51,7 +51,16 @@ The ship has the following features:
 
 ## Changelog
 
-### v1.0.2 (Current) - 04/03/2022
+### v1.1.0 (Current) - XX/XX/2022
+
+- Painted thrusters, generators and fuel chambers black
+- Painted propellant tanks red
+- Added four heat sinks
+- Reduced radiators to four bases
+- Replaced  `RadiationRate` panel with `HeatTransferRate`
+- Added `StoredHeat` panel
+
+### v1.0.2 - 04/03/2022
 
 - Piped and cabled four braking thusters that were not connected
 - Added `Unload` buttons which turns off cargo lock beams on right and left side respectively
@@ -114,7 +123,8 @@ The left lever on the center console controls backwards thrust (braking) and the
 | `Battery` | Shows current battery charge of the 40 batteries, maximum of 10,000 units. |
 | `Generator` | Current generator rate, maximum of 100%. |
 | `Min Generator Rate` & `Min Gen` | Toggle and sets minimum generator rate. See [Managing Power](#managing-power). |
-| `RadiationRate` | Current radiation rate of the radiators, maximum of 100%. If it is hitting 100% your radiators may be damaged. |
+| `HeatTransferRate` | Current heat transfer rate of the heat sinks, maximum of 100%. |
+| `StoredHeat` | Current stored heat in the heat sinks, maximum of 15,000 units. |
 | `Fuel Rod 1`, `Fuel Rod 2`, `Fuel Rod 3`, `Fuel Rod 4`, `Fuel Rod 5`, `Fuel Rod 6`, `Fuel Rod 7`, `Fuel Rod 8` | Total fuel remaining on fuel rods, maximum of 300,000 units each. |
 | `Shutdown` | Will turn off all fuel chambers thus shutting down generators. |
 | `ID` | Toggle for the transponder. |
